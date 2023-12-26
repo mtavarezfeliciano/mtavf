@@ -1,0 +1,102 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px;
+  z-index: 4000;
+}
+.nav-logo {
+  position: absolute;
+  left: 48%;
+}
+.nav-logo img {
+  width: 50px;
+  height: auto;
+  position: relative;
+  left: 50px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+.nav-list li {
+  padding: 0 20px;
+}
+.nav-list li a {
+  color: #cfcfcf;
+}
+.nav-list li:hover {
+  scale: calc(1.2);
+  transition: ease-in-out 0.3s;
+}
+.nav-list li a:hover {
+  color: #c42929;
+  transition: ease-in-out 0.3s;
+}
+.nav-name > h3 {
+  font-weight: 300;
+}
+
+/* main body css */
+.main-body {
+  display: flex;
+  justify-content: center;
+}
+.top-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.left-body h2 {
+  text-align: right;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+.right-body {
+  max-width: 200px;
+}
+.right-body h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.right-body > p {
+    font-size: 15px;
+}
+.right-body p span {
+    color: #c42929;
+    font-weight: 600;
+}
+
+/* services */
+.services-section {
+  margin: 80px 0;
+}
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  grid-template-rows: repeat(2, auto);
+  gap: 25px;
+  justify-content: center;
+}
+.service-card {
+  background-color: rgba(15, 15, 15, 0.5);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 100%; 
+}
+.service-card i {
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.service-card > h4 {
+  margin: 15px 0;
+}
+.service-card > p {
+  font-size: 14px;
+}
+.fa-mobile-screen {
+  padding-right: 10px;
+}

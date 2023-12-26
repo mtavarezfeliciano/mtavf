@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;200;300;400;600;700&family=Montserrat:wght@100;200;300;400;500;700;900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+}
+
+html {
+  color: #cfcfcf;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #111;
+  overflow-x: hidden;
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+/* animation for fade in */
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
+/* noise effect */
+.bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
+  width: 200%;
+  height: 200vh;
+  background: transparent
+    url("http://assets.iceable.com/img/noise-transparent.png") repeat 0 0;
+  background-repeat: repeat;
+  animation: bg-animation 0.2s infinite;
+  opacity: 0.4;
+  visibility: visible;
+  z-index: -2;
+}
+
+@keyframes bg-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  10% {
+    transform: translate(-5%, -5%);
+  }
+  20% {
+    transform: translate(-10%, 5%);
+  }
+  30% {
+    transform: translate(5%, -10%);
+  }
+  40% {
+    transform: translate(-5%, 15%);
+  }
+  50% {
+    transform: translate(-10%, 5%);
+  }
+  60% {
+    transform: translate(15%, 0);
+  }
+  70% {
+    transform: translate(0, 10%);
+  }
+  80% {
+    transform: translate(-15%, 0);
+  }
+  90% {
+    transform: translate(10%, 5%);
+  }
+  100% {
+    transform: translate(5%, 0);
+  }
+}
+/* 
+.container {
+  margin-left: 15%;
+  margin-right: 15%;
+} */
