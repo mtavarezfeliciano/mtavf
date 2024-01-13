@@ -5,6 +5,11 @@
   padding: 20px 20px;
   z-index: 4000;
 }
+.nav-name h3 a { color: #cfcfcf }
+.nav-name h3 a:hover {
+  color: #c42929;
+  transition: ease-in-out 0.2s;
+}
 .nav-logo {
   position: absolute;
   left: 48%;
@@ -24,10 +29,6 @@
 }
 .nav-list li a {
   color: #cfcfcf;
-}
-.nav-list li:hover {
-  scale: calc(1.2);
-  transition: ease-in-out 0.3s;
 }
 .nav-list li a:hover {
   color: #c42929;
@@ -70,6 +71,12 @@
 }
 
 /* services */
+
+.services-text h2 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
 .services-section {
   margin: 80px 0;
 }
@@ -93,10 +100,34 @@
 }
 .service-card > h4 {
   margin: 15px 0;
+  color: #c42929;
 }
 .service-card > p {
   font-size: 14px;
 }
 .fa-mobile-screen {
   padding-right: 10px;
+}
+
+/* projects section */
+
+.projects-title h2 {
+  text-align: center;
+}
+.portfolio-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.port-card {
+  width: 30%;
+  background-color: rgba(15, 15, 15, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin: 30px 0;
+}
+.port-card > h3 {
+  padding-bottom: 15px;
 }
